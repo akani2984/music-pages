@@ -23,7 +23,7 @@ EOF
 
 echo "$re" | while read line; do
 cat >> index.html <<EOF
-<tr><td>$line</td><td><a id="$n" onclick="play('$line','$n')" class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-indigo">播放</a></td></tr>'
+<tr><td>$line</td><td><a id="$n" onclick="play('$line','$n')" class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-indigo">播放</a></td></tr>
 EOF
 n=$(($n + 1))
 done
